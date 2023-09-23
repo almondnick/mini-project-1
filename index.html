@@ -9,25 +9,44 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="https://github.com/almondnick">Github</a></li>
-            <li>Contact</li> <!--Needs to lead to contact form-->
-            <li>Portfolio</li>
-        </ul>
+        <nav>
+            <ul>
+                <li> <a href="https://github.com/almondnick" target="_blank">Github</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <li>Portfolio</li>
+            </ul>
+        </nav>
     </header>
 
     <biography>
         <h1>Nick Almond</h1>
-        <img id="photo" src="./assets/IMG_3532.jpg" alt="student photo">
-        <p>Hello! </p>
+        <figure>
+            <img id="photo" src="./assets/IMG_3532.jpg" alt="student photo">
+            <figcaption>Hello!</figcaption>
+        </figure>
     </biography>
 
-    <contact-form>
-
-    </contact-form>
+    <section>
+        <h2 id="contact">Contact Me</h2>
+        <form>
+            <ul>
+                <li>
+                    <label class="contact-form" for="name">Name:</label>
+                    <input type="text" id="name" name="user-name">
+                </li>
+                <li>
+                    <label class="contact-form" for="email">Email:</label>
+                    <input type="text" id="email" name="user-email">
+                </li>
+            </ul>
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
 
     <footer>
-
+        <p>2023 Nick Almond Productions</p> <!--Needs Copyright Symbol-->
     </footer>
 </body>
 </html>
